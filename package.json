@@ -1,0 +1,29 @@
+{
+  "name": "vue-ssr-bug-reproduction",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "ssr:build": "vue-cli-service ssr:build",
+    "ssr:serve": "vue-cli-service ssr:serve",
+    "ssr:start": "cross-env NODE_ENV=production vue-cli-service ssr:serve --mode production"
+  },
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.16",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@akryum/vue-cli-plugin-ssr": "^0.3.0",
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "@vue/eslint-config-airbnb": "^3.0.5",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
